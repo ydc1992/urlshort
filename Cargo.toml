@@ -1,0 +1,21 @@
+[package]
+name = "urlshort"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+elasticsearch = { version = "8.5.0-alpha.1" }
+serde_json = "1.0.115"
+tokio = { version = "1.0.0", features = ["rt", "rt-multi-thread", "macros"] }
+axum = { version = "0.6", features = ["default", "headers"] }
+axum-extra = { version = "0.8" }
+base64 = "0.13.0"
+serde = { version = "1.0.197", features = ["derive"] }
+sevenz-rust = "0.6.0"
+reqwest = "0.11.27"
+http = "0.2.12"
+tower-http = { version = "0.1", features = ["fs"] }
+mime_guess = "2.0.4"
+walkdir = "2"
